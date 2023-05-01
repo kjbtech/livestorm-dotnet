@@ -42,8 +42,6 @@ namespace KJBTech.Livestorm
                 p => p.Add("Authorization", _apiKey)
             );
 
-            client.AddDefaultHeader("User-Agent", BuildUserAgent());
-
             return client;
         }
 
@@ -135,8 +133,7 @@ namespace KJBTech.Livestorm
 
         private string BuildUserAgent()
         {
-            return $"livestorm-dotnet@v{Assembly.GetExecutingAssembly().GetName().Version}"
-                + $" dotnet-v{Environment.Version}"
+            return $"dotnet-v{Environment.Version}"
                 + $" {Environment.OSVersion}";
         }
     }
