@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJBTech.Livestorm", "src\KJBTech.Livestorm\KJBTech.Livestorm.csproj", "{F51E9B9F-BA9E-49B5-9FA9-B2F7BBDD5936}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJBTech.Livestorm.Tests", "tests\KJBTech.Livestorm.Tests\KJBTech.Livestorm.Tests.csproj", "{7EAF19D8-FE12-4194-93A2-FFD882A28C5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KJBTech.Livestorm.IntegrationTests", "tests\KJBTech.Livestorm.IntegrationTests\KJBTech.Livestorm.IntegrationTests.csproj", "{7EAF19D8-FE12-4194-93A2-FFD882A28C5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2DB70165-52E9-4713-8B2B-11E82F31010C}"
 	ProjectSection(SolutionItems) = preProject

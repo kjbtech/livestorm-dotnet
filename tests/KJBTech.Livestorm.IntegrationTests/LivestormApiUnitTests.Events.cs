@@ -1,23 +1,22 @@
 using System;
 using System.Threading.Tasks;
-using KJBTech.Livestorm.Tests.IntegrationTests;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
-namespace KJBTech.Livestorm.Tests
+namespace KJBTech.Livestorm.IntegrationTests
 {
-    [TestCategory("Livestorm API V1 - Events")]
+    [Trait("Category", "Livestorm API V1 - Events")]
     public partial class SessionLivestormApiUnitTests : LivestormApiUnitTests
     {
         #region Tests
 
-        [TestMethod]
+        [Fact]
         public async Task GetEvent()
         {
             var id = new Guid("cbeeb26f-082d-4f25-b862-d2b2b11dd9a1");
             var result = await _api.GetEventAsync(id);
 
-            Assert.IsNotNull(result);
-            Assert.AreEqual(id, result.Event.Id);
+            Assert.NotNull(result);
+            Assert.Equal(id, result.Event.Id);
         }
 
         #endregion Tests
