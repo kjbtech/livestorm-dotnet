@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace KJBTech.Livestorm.Tests
+namespace KJBTech.Livestorm.Tests.IntegrationTests
 {
     [TestClass, TestCategory("Livestorm API V1")]
     public class LivestormApiUnitTests
@@ -25,7 +25,7 @@ namespace KJBTech.Livestorm.Tests
         [TestMethod]
         public async Task Ping_Success()
         {
-            bool result = await _api.PingAsync();
+            var result = await _api.PingAsync();
 
             Assert.IsTrue(result);
         }

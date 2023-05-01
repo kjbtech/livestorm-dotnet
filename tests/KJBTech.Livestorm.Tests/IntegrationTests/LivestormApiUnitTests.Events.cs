@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using KJBTech.Livestorm.Tests.IntegrationTests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace KJBTech.Livestorm.Tests
